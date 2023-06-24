@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "7b8af938-ff95-4ea1-a9e2-93a8c06d1979",
+		"name": "sistemaContaUsuario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/ContaUsuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7045/api/ContaUsuario/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7045",
+					"path": [
+						"api",
+						"ContaUsuario",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ContaUsuario/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7045/api/ContaUsuario/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7045",
+					"path": [
+						"api",
+						"ContaUsuario",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ContaUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"titular\": \"Gabriel Ferreira\",\r\n \"email\": \"gab@email.com\",\r\n \"agencia\": 1,\r\n \"numero\": \"22333-3\",\r\n \"tipoConta\": \"2 - Conta Investimentos\",\r\n \"saldo\": 5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7045/api/ContaUsuario",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7045",
+					"path": [
+						"api",
+						"ContaUsuario"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ContaUsuario/id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 6,\r\n \"titular\": \"Fernando Ferreira\",\r\n \"email\": \"gab@email.com\",\r\n \"agencia\": 1,\r\n \"numero\": \"22333-3\",\r\n \"tipoConta\": \"2 - Conta Investimentos\",\r\n \"saldo\": 50\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7045/api/ContaUsuario/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7045",
+					"path": [
+						"api",
+						"ContaUsuario",
+						"6"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ContaUsuario/id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7045/api/ContaUsuario/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7045",
+					"path": [
+						"api",
+						"ContaUsuario",
+						"6"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
